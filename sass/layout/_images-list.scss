@@ -1,0 +1,14 @@
+.images {
+    &__list {
+        text-decoration: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+        display: flex;
+    }
+    
+    &__item {
+        position: relative;
+    }
+}

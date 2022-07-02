@@ -1,0 +1,40 @@
+.overlay {
+    /* hover overlay */
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 294px;
+    left: 0px;
+    bottom: 149px;
+    overflow: hidden;
+
+    background: rgba(33, 150, 243, 0.9);
+    transform: translatey(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+
+    .portfolio__card:hover &,
+    .portfolio__card:focus & {
+            opacity: 1;
+            transform: translatey(0);
+        }
+}
+
+.overlay-text {
+    position: absolute;
+    width: 301px;
+    height: 196px;
+    left: 24px;
+    top: 49px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}

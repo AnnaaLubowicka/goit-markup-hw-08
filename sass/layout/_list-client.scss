@@ -1,0 +1,11 @@
+.clients {
+    padding-top: 94px;
+
+    &__list {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 94px;
+        }
+}

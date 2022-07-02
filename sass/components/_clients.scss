@@ -1,0 +1,32 @@
+.clients {
+    &__item {
+        width: 170px;
+        height: 92px;
+        border: 1px solid rgba(175, 177, 184, 1);
+        border-radius: 4%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        
+        color: var(--link-color1);
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover,
+            &:focus {
+                color:var(--logo-color);
+                fill: currentColor;
+                border: 1px solid var(--logo-color);
+            }
+    }
+
+    &__icon {
+        fill: currentColor;
+        width: 106px;
+        height: 61px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+}

@@ -1,0 +1,14 @@
+.team {
+    padding: 94px 0;
+    line-height: 1.17;
+    background-color: var(--bg-icon-team);
+    justify-content: space-between;
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+        display: flex;
+    }
+}

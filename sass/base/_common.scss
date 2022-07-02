@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    color: var(--main-color);
+
+}
+
+:root {
+    --main-color: #212121;
+    --logo-color: #2196F3;
+    --link-color: #757575;
+    --link-color1: #AFB1B8;
+    --bg-color: #2F303A;
+    --bg-icon-team: #F5F4FA;
+    --light-logo-color: #FFFFFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17   ;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--main-color);
+    margin-bottom: 50px;
+}
+button {
+    font-family: inherit;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+}

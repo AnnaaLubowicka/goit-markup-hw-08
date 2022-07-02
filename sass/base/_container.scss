@@ -1,0 +1,33 @@
+.container {
+    width: 1200px;
+    padding: 0;
+    align-items: center;
+    margin: 0 auto;
+    
+    .page-header & {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title-section & {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .images & {
+        padding-bottom: 94px;
+    }
+    .portfolio-buttons--container {
+        display: flex;
+        justify-content: center;
+        padding-top: 94px;
+        padding-bottom: 50px;
+    }
+    .portfolio-buttons & {
+        display: flex;
+        justify-content: center;
+        padding-top: 94px;
+        padding-bottom: 50px;
+    }
+}

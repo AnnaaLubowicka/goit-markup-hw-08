@@ -1,0 +1,48 @@
+
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+        fill: currentColor;
+    }
+
+    &__item {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+            
+        &:not(:last-child) {
+            margin-right: 30px;
+        }   
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 14px;
+        color: var(--link-color);
+        padding: 33px 0 31px;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        fill: currentColor;
+
+        &:hover,
+        &:focus {
+            color: var(--logo-color);
+        }
+    }
+
+    &__icon {
+        margin-right: 10px;
+        fill: currentColor;
+}
+}
