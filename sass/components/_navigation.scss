@@ -38,23 +38,27 @@
         }
     }
 
+    
     .navigation__link--active {
         &::after {
             content: "";
-            display: flex;
-            width: 53px;
-            height: 4px;
+            display: block;
+            width: 100%;
+            border-bottom: 4px solid #2196F3;
+            border-radius: 2px;
             background-color: #2196F3;
             position: relative;
             top: 28px;
+            margin-bottom: -6px;
         }
     }
 
-    
-
     .navigation__item {
+        position: relative;
+
         &:not(:last-child) {
             margin-right: 60px;
+            
         }
     }
 }

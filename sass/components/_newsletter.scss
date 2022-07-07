@@ -12,14 +12,13 @@
     color: var(--light-logo-color);
 }
 .newsletter-submit {
-    align-items: center;
-    flex-direction: column;
+ 
     min-width: 100%;
     margin-left: 15px;
-    margin-left: 15px;
+
 }
 .newsletter-submit__input {
-    min-width: 450px;
+    width: 450px;
     height: 50px;
     display: flex;
     align-items: flex-start;
@@ -31,8 +30,8 @@
     transition: none;
     color: var(--light-logo-color);
     outline-color: var(--link-color);
-    margin-left: 15px;
-    margin-left: 15px;
+
+   
 
     &:focus {
         outline-color: var(--link-color);
@@ -73,17 +72,21 @@
 }
 @media screen and (min-width: 1200px) {
 .newsletter-submit {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
     margin: 0;
     
 
     &__input {
-        margin: 0;
-        min-width: 358px;
+        margin-right: 15px;
+        width: 358px;
+        height: 50px;
     }
 
 }
 .newsletter-button--margin {
-    margin-left: 12px;
+    margin: 0;
     display: flex;
     
 }

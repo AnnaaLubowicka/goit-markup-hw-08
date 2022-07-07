@@ -10,14 +10,11 @@
 //--- 768-1200-----//
 @media screen and (min-width: 768px) {
      .portfolio-list {
-         display: flex;
-         flex-wrap: wrap;
-         margin-left: -30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
 
-         __item {
-             flex-basis: #{calc((100% / 2) - 30px)};
-             margin-left: 30px;
-         }
      }
  }
 
@@ -26,7 +23,7 @@
     .portfolio {
 
         &__item:nth-child(-n + 5) {
-        margin-bottom: 30px;              // flex-basis: #{calc((100% / 3) - 30px)};
+        margin-bottom: 30px;
         }
     }
     .portfolio-list {
