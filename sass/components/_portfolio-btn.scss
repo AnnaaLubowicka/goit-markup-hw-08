@@ -1,16 +1,27 @@
+//----480--768------
+
 .portfolio-buttons-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: space-between;
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-bottom: 40px;
+    margin-top: 60px;
 }
+
+.portfolio-buttons__item {
+    margin-left: 8px;
+    margin-bottom: 15px;
+}
+
 .portfolio-buttons {
     &__item:not(:last-child) {
         padding-right: 8px;
     }
+
     &__button {
         padding: 6px 22px;
+        color: #212121;
         background: #F5F4FA;
         border-radius: 4px;
         font-weight: 500;
@@ -30,4 +41,15 @@
             border-radius: 4px;
         }
     }
+}
+
+//----1200-----------//
+@media screen and (min-width: 1200px) {
+.portfolio-buttons-list {
+    list-style: none;
+    padding: 0;
+    margin: 94px auto 50px;
+    justify-content: space-between;
+    display: flex;
+}
 }

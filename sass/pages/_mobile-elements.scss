@@ -1,0 +1,205 @@
+@mixin mobile-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 796px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16),
+        0px 2px 4px 0px rgba(0, 0, 0, 0.08),
+        0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+}
+
+@mixin mobile-menu__close-btn {
+    position: absolute;
+    top: 21px;
+    right: 25px;
+    color: #212121;
+    background-color: transparent;
+    border: none;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: #2196F3;
+    }
+}
+
+@mixin mobile-menu__navigation-link {
+    text-decoration: none;
+    color: #212121;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: #2196F3;
+    }
+}
+
+@mixin mobile-menu__socjal-link--line($width-mobile-menu__socjal-link--line) {
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: "";
+        display: flex;
+        width: $width-mobile-menu__socjal-link--line;
+        height: 1px;
+        background-color: rgba(33, 33, 33, 0.2);
+        rotate: 90deg;
+    }
+}
+
+// --------------------320---------------------
+@media screen and (min-width: 320px) {
+    .mobile-menu {
+        @include mobile-menu;
+        padding: 40px 20px;
+    }
+
+    .mobile-menu__close-btn {
+        @include mobile-menu__close-btn;
+    }
+
+    .mobile-menu__navigation-item {
+        font-size: 30px;
+        line-height: 40px;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .mobile-menu__navigation-link {
+        @include mobile-menu__navigation-link;
+    }
+
+    .mobile-menu__contact-list {
+        margin-top: 250px;
+        margin-bottom: 64px;
+    }
+
+    .mobile-menu__contact-item {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .mobile-menu__contact-link {
+        text-decoration: none;
+    }
+
+    .mobile-menu__contact-link--phone {
+        color: #2196F3;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 2%;
+    }
+
+    .mobile-menu__contact-link--mail {
+        color: #757575;
+        font-size: 20px;
+        line-height: 28px;
+        transition: color 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: #2196F3;
+        }
+    }
+
+    .mobile-menu__socjal-list {
+        display: flex;
+    }
+
+    .mobile-menu__socjal-link--line {
+        @include mobile-menu__socjal-link--line(18px);
+    }
+
+
+    .mobile-menu__socjal-link {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 22px;
+        color: #2196F3;
+    }
+}
+
+// --------------------480---------------------
+@media screen and (min-width: 480px) {
+    .mobile-menu {
+        @include mobile-menu;
+        padding: 48px 40px;
+    }
+
+    .mobile-menu__close-btn {
+        @include mobile-menu__close-btn;
+    }
+
+    .mobile-menu__navigation-item {
+        font-size: 40px;
+        line-height: 47px;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .mobile-menu__navigation-link {
+        @include mobile-menu__navigation-link;
+    }
+
+    .mobile-menu__contact-list {
+        margin-top: 302px;
+        margin-bottom: 64px;
+    }
+
+    .mobile-menu__contact-item {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .mobile-menu__contact-link {
+        text-decoration: none;
+    }
+
+    .mobile-menu__contact-link--phone {
+        color: #2196F3;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 2%;
+    }
+
+    .mobile-menu__contact-link--mail {
+        color: #757575;
+        font-size: 24px;
+        line-height: 28px;
+        transition: color 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: #2196F3;
+        }
+    }
+
+    .mobile-menu__socjal-list {
+        display: flex;
+    }
+
+    .mobile-menu__socjal-link--line {
+        @include mobile-menu__socjal-link--line(22px);
+    }
+
+
+    .mobile-menu__socjal-link {
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 22px;
+        color: #2196F3;
+    }
+}

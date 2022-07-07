@@ -1,0 +1,101 @@
+// --------------------320---------------------
+@media screen and (min-width: 320px) {
+    .page-header .container {
+        position: relative;
+        align-items: center;
+        height: 60px;
+        max-width: 320px;
+        padding: 0 15px;
+    }
+
+    .page-header {
+        // padding: 0 15px;
+        background: #ffffff;
+        border-bottom: 1px solid #ececec;
+    }
+
+
+
+    // MAIN DESCRIPTION START
+    .advantages .container {
+        justify-content: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+}
+
+// --------------------480---------------------
+@media screen and (min-width: 480px) {
+    .page-header .container {
+        align-items: center;
+        height: 60px;
+        max-width: 480px;
+        padding: 0 15px;
+    }
+
+    .page-header {
+        // padding: 0 15px;
+        background: #ffffff;
+        border-bottom: 1px solid #ececec;
+    }
+
+
+
+
+    // MAIN DESCRIPTION START
+    .advantages .container {
+        justify-content: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
+
+
+
+    .page-header .container {
+        align-items: center;
+        height: 80px;
+        max-width: 768px;
+    }
+
+    .page-header {
+        background: #ffffff;
+        border-bottom: 1px solid #ececec;
+    }
+
+
+
+    // MAIN DESCRIPTION START
+    .advantages .container {
+        justify-content: center;
+        padding-top: 60px;
+    }
+
+
+
+}
+
+// --------------------1200---------------------
+@media screen and (min-width: 1200px) {
+    .page-header .container {
+        align-items: center;
+        height: 80px;
+        max-width: 1200px;
+    }
+
+    .page-header {
+        background: #ffffff;
+        border-bottom: 1px solid #ececec;
+    }
+
+
+
+
+    // MAIN DESCRIPTION START
+    .advantages .container {
+        padding-top: 94px;
+    }
+
+}

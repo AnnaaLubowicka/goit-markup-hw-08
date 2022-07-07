@@ -1,14 +1,96 @@
 .container {
-    width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+}
+
+@media screen and (min-width: 320px) {
+    .container {
+        max-width: 320px;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        max-width: 480px;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 15px;
+        // display: flex;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+    max-width: 1200px;
+    padding: 0 15px;
+    }
+}
+
+//------settings for tittle-section-----//
+// --------------------320---------------------
+@media screen and (min-width: 320px) {
+    .title-section .container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 118px;
+        padding-bottom: 198px;
+        }
+    }
+
+// --------------------480---------------------
+@media screen and (min-width: 320px) {
+    .title-section .container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 118px;
+        padding-bottom: 198px;
+        }
+    }
+// --------------------768---------------------
+@media screen and (min-width: 768px) {
+    .title-section .container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 118px;
+        padding-bottom: 198px;
+        }
+    }
+// --------------------1200---------------------
+@media screen and (min-width: 1200px) {
+    .title-section .container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 200px;
+        padding-bottom: 280px;
+        }
+    }
+//--------end setting for tittle section-----//
+
+/*.container {
+    /*width: 1200px;
     padding: 0;
     align-items: center;
     margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     
     .page-header & {
         display: flex;
         justify-content: space-between;
+       
+        min-height: 60px;
+        
     }
-
+} 
+    
+.container {
     .title-section & {
         justify-content: center;
         display: flex;
@@ -18,7 +100,7 @@
     .images & {
         padding-bottom: 94px;
     }
-    .portfolio-buttons--container {
+    .portfolio-buttons--container & {
         display: flex;
         justify-content: center;
         padding-top: 94px;
@@ -30,4 +112,58 @@
         padding-top: 94px;
         padding-bottom: 50px;
     }
-}
+  }
+  .container {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media screen and (min-width: 480px) {
+          width: 480px;
+      }
+
+      @media screen and (min-width: 768px) {
+          width: 768px;
+      }
+
+      @media screen and (min-width: 1200px) {
+          width: 1200px;
+      }
+  }*/
+  /* mobile settings*/
+//   .container {
+//     max-width: 100%;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     margin: 0 auto;
+
+//     @media screen and (min-width: 480px) {
+//         width: 480px;
+//         padding-left: 15px;
+//         padding-right: 15px;
+//         margin: 0 auto;
+//         }
+ 
+//   }
+//   @media screen and (min-width: 768px) {
+//       .container{
+//         max-width: 1200px;
+//         margin: 0 auto;
+//       }
+//   } 
+
+//    @media screen and (min-width: 1200px) {
+//        .container{
+//         max-width: 1600px;
+//         padding: 0 15px;
+//         margin: 0 auto;
+//        }
+//    }
+// .container .title-section {
+//        justify-content: center;
+//        display: flex;
+//        flex-direction: column;
+//        margin-left: auto;
+//        margin-right: auto;
+//    }

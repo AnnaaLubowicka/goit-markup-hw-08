@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device=width, inicial-scale=1.0">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
             </nav>
             <ul class="contact">
                 <li class="contact__item">
-                    <a href="mailto:info@devstudio.com" class="contact__link">
+                    <a href="mailto:info@devstudio.com" class="contact__link contact__link--mail">
                         <svg class="contact__icon" width="16" height="12">
                             <use href="images/icon.svg#icon-envelope"></use>
                         </svg> info@devstudio.com
@@ -41,6 +41,13 @@
                     </a>
                 </li>
             </ul>
+            <div class="header-mobile-menu">
+                <button class="header-mobile-menu__button" type="button" mobile-menu-open>
+                    <svg class="header-mobile-menu__ico" width="40px" height="40px">
+                        <use href="./images/icon.svg#header-mobile-menu__ico"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
     <main>
@@ -98,6 +105,9 @@
             <h2>Czym się zajmujemy</h2>
             <ul class="images__list">
                 <li class="images__item">
+                <picture class="main-what-we-do-space__picture">
+                    <source srcset="/images/images/computer_img.jpg 1x, /images/images/computer_img@2x.jpg 2x"
+                        media="(min-width: 1200px)">
                 <img src="images/close-up-image-programer-working-his-desk-office.jpg"
                 alt="programer working his desk office"
                 width="370"
@@ -105,6 +115,9 @@
                 <p class="images__label">Aplikacje komputerowe</p>
                 </li>
                 <li class="images__item">
+                <picture class="main-what-we-do-space__picture">
+                    <source srcset="/images/images/mobile_img.jpg 1x, /images/images/mobile_img@2x.jpg 2x,"
+                        media="(min-width: 1200px)">
                 <img src="images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones.jpg" 
                 alt="smartphones team creators is working interface mobile phones"
                 width="370"
@@ -112,6 +125,9 @@
                 <p class="images__label">Aplikacje mobilne</p>
                 </li>
                 <li class="images__item">
+                <picture class="main-what-we-do-space__picture">
+                    <source srcset="/images/images/tablet_img.jpg 1x, /images/images/tablet_img@2x.jpg 2x"
+                        media="(min-width: 1200px)">
                 <img src="images/creative-artist-web-design-with-working-colour-selection-graphic-tablet.jpg"
                 alt="creative artist web design with working colour selection graphic tablet" 
                 width="370"
@@ -123,13 +139,19 @@
         </section>
         <section class="team">
             <div class="container">
-            <h2>Nasz zespół</h2>
+                <h2 class="team__tittle">Nasz zespół</h2>
                 <ul class="team__list">
                     <li class="team-list__item">
                         <figure class="team__card">
-                        <img src="images/4853.jpg" alt="Product Designer"
-                        width="270"
-                        height="260">
+                        <img class="team__image" src="images/team/john-doe-product-designer-mobile-@1x-450x460.jpg" srcset="
+                            images/team/john-doe-product-designer-mobile-@1x-450x460.jpg   450w,
+                            images/team/john-doe-product-designer-mobile-@2x-900x920.jpg   900w,
+                            images/team/john-doe-product-designer-tablet-@1x-354x374.jpg   354w,
+                            images/team/john-doe-product-designer-tablet-@2x-708x748.jpg   708w,
+                            images/team/john-doe-product-designer-desktop-@1x-270x260.jpg 270w,
+                            images/team/john-doe-product-designer-desktop-@2x-540x520.jpg 540w
+                            " alt="John Doe product designer"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px" />
                         <figcaption>
                             <h4 class="team__name">John Doe</h4>
                             <p class="team__caption team__caption--accent">Product Designer</p>
@@ -168,10 +190,15 @@
                     </li>
                     <li class="team-list__item">
                         <figure class="team__card">
-                        <img src="images/5844.jpg"
-                        alt="Frontend Developer" 
-                        width="270"
-                        height="260">
+                        <img class="team__image" src="images/team/john-doe-frontend-developer-mobile-@1x-450x460.jpg" srcset="
+                            images/team/john-doe-frontend-developer-mobile-@1x-450x460.jpg   450w,
+                            images/team/john-doe-frontend-developer-mobile-@2x-900x920.jpg   900w,
+                            images/team/john-doe-frontend-developer-tablet-@1x-354x374.jpg   354w,
+                            images/team/john-doe-frontend-developer-tablet-@2x-708x748.jpg   708w,
+                            images/team/john-doe-frontend-developer-desktop-@1x-270x260.jpg 270w,
+                            images/team/john-doe-frontend-developer-desktop-@2x-540x520.jpg 540w
+                            " alt="John Doe frontend developer"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px" />
                         <figcaption>
                             <h4 class="team__name">John Doe</h4>
                             <p class="team__caption team__caption--accent">Frontend Developer</p>
@@ -210,10 +237,16 @@
                     </li>
                     <li class="team-list__item">
                         <figure class="team__card">
-                        <img src="images/16166.jpg"
-                        alt="Marketing" 
-                        width="270"
-                        height="260">
+                        <picture class="team-space__picture">
+                        <img class="team__image" src="images/team/john-doe-marketing-mobile-@1x-450x460.jpg" srcset="
+                            images/team/john-doe-marketing-mobile-@1x-450x460.jpg   450w,
+                            images/team/john-doe-marketing-mobile-@2x-900x920.jpg   900w,
+                            images/team/john-doe-marketing-tablet-@1x-354x374.jpg   354w,
+                            images/team/john-doe-marketing-tablet-@2x-708x748.jpg   708w,
+                            images/team/john-doe-marketing-desktop-@1x-270x260.jpg 270w,
+                            images/team/john-doe-marketing-desktop-@2x-540x520.jpg 540w
+                            " alt="John Doe marketing"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px" />
                         <figcaption>
                             <h4 class="team__name">John Doe</h4>
                             <p class="team__caption team__caption--accent">Marketing</p>
@@ -252,10 +285,15 @@
                     </li>
                     <li class="team-list__item">        
                         <figure class="team__card">
-                        <img src="images/2968.jpg" 
-                        alt="UI Designer" 
-                        width="270"
-                        height="260">
+                        <img class="team__image" src="images/team/john-doe-ui-designer-mobile-@1x-450x460.jpg" srcset="
+                            images/team/john-doe-ui-designer-mobile-@1x-450x460.jpg   450w,
+                            images/team/john-doe-ui-designer-mobile-@2x-900x920.jpg   900w,
+                            images/team/john-doe-ui-designer-tablet-@1x-354x374.jpg   354w,
+                            images/team/john-doe-ui-designer-tablet-@2x-708x748.jpg   708w,
+                            images/team/john-doe-ui-designer-desktop-@1x-270x260.jpg 270w,
+                            images/team/john-doe-ui-designer-desktop-@2x-540x520.jpg 540w
+                            " alt="John Doe Ui designer"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px" />
                         <figcaption>
                             <h4 class="team__name">John Doe</h4>
                             <p class="team__caption team__caption--accent">UI Designer</p>
@@ -293,49 +331,49 @@
                         </figure>
                     </li>
                 </ul>
-                </div>
+            </div>
         </section>
         <section class="clients">
             <div class="container">
-                <h2>Nasi klienci</h2>
+                <h2 class="clients__tittle">Nasi klienci</h2>
                 <ul class="clients__list">
-                    <li>
-                        <a class="clients__item">
+                    <li class="clients__item">
+                        <a class="clients__link">
                             <svg class="clients__icon">
                                 <use href="images/icon.svg#icon-logo1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a class="clients__item">
+                    <li class="clients__item">
+                        <a class="clients__link">
                             <svg class="clients__icon">
                                 <use href="images/icon.svg#icon-logo2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a class="clients__item">
+                    <li class="clients__item">
+                        <a class="clients__link">
                             <svg class="clients__icon">
                                 <use href="images/icon.svg#icon-logo3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a class="clients__item">
+                    <li class="clients__item">
+                        <a class="clients__link">
                             <svg class="clients__icon">
                                 <use href="images/icon.svg#icon-logo4"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a class="clients__item">
+                    <li class="clients__item">
+                        <a class="clients__link">
                             <svg class="clients__icon">
                                 <use href="images/icon.svg#icon-logo5"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a class="clients__item" >
+                    <li class="clients__item">
+                        <a class="clients__link" >
                             <svg class="clients__icon">
                                 <use href="images/icon.svg#icon-logo6"></use>
                             </svg>
@@ -351,13 +389,13 @@
                 <div class="footer-aside">
                     <a class="logo" href="/"><span class="logo logo--accent-footer">Web</span><span
                             class="logo logo--accent-footer-light">Studio</span></a>
-                    <div class="footer-adress">
-                        <address class="footer-adress__item">m. Warszawa, Aleje Jerozolimskie 21</address>
-                        <address class="footer-adress__item">
-                            <a class="footer-adress__link" href="mailto:info@example.com"> info@example.com</a>
+                    <div class="footer-address">
+                        <address class="footer-address__item">m. Warszawa, Aleje Jerozolimskie 21</address>
+                        <address class="footer-address__item">
+                            <a class="footer-address__link" href="mailto:info@example.com"> info@example.com</a>
                         </address>
-                        <address class="footer-adress__item">
-                            <a class="footer-adress__link" href="tel:+48111111111">+48 111 111 111</a>
+                        <address class="footer-address__item">
+                            <a class="footer-address__link" href="tel:+48111111111">+48 111 111 111</a>
                         </address>
                     </div>
                 </div>
@@ -398,7 +436,7 @@
                         <label class="newsletter-flex__tittle"> ZAPISZ SIĘ DO NEWSLETTERA</label>
                         <div class="newsletter-submit">
                             <input class="newsletter-submit__input" type="email" name="mail" placeholder="E-mail" required/>
-                            <button class="newsletter-button" type="submit">Zapisz się
+                            <button class="newsletter-button newsletter-button--margin" type="submit">Zapisz się
                                 <svg class="newsletter-button__svg">
                                 <use class="newsletter-icon" href="/images/icon.svg#icon-send"></use>
                                 </svg>   
@@ -450,8 +488,49 @@
             </form>
     </div>
 </div>
-
+<div class="mobile-menu is-hidden" mobile-menu>
+    <button class="mobile-menu__close-btn" type="button" mobile-menu-close>x</button>
+    <ul class="mobile-menu__navigation-list">
+        <li class="mobile-menu__navigation-item">
+            <a href="index.html" class="mobile-menu__navigation-link">Agencja</a>
+        </li>
+        <li class="mobile-menu__navigation-item">
+            <a href="portfolio.html" class="mobile-menu__navigation-link">Portfolio</a>
+        </li>
+        <li class="mobile-menu__navigation-item">
+            <a href="" class="mobile-menu__navigation-link">Kontakt</a>
+        </li>
+    </ul>
+    <ul class="mobile-menu__contact-list">
+        <li class="mobile-menu__contact-item">
+            <a href="tel:48111111111"
+                class="mobile-menu__contact-link mobile-menu__contact-link--phone">&#43;48&nbsp111&nbsp111&nbsp111</a>
+        </li>
+        <li class="mobile-menu__contact-item">
+            <a href="mailto:info@devstudio.com"
+                class="mobile-menu__contact-link mobile-menu__contact-link--mail">info&#64;devstudio.com</a>
+        </li>
+    </ul>
+    <ul class="mobile-menu__socjal-list">
+        <li class="mobile-menu__socjal-item">
+            <a href="" class="mobile-menu__socjal-link">Instagram</a>
+        </li>
+        <li class="mobile-menu__socjal-item">
+            <a href="" class="mobile-menu__socjal-link mobile-menu__socjal-link--line">Twitter</a>
+        </li>
+        <li class="mobile-menu__socjal-item">
+            <a href="" class="mobile-menu__socjal-link mobile-menu__socjal-link--line">Facebook</a>
+        </li>
+        <li class="mobile-menu__socjal-item">
+            <a href="" class="mobile-menu__socjal-link mobile-menu__socjal-link--line">Linkedin</a>
+        </li>
+    </ul>
+</div>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
+<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

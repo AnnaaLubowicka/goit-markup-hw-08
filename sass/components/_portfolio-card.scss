@@ -3,7 +3,7 @@
         object-fit: fill;
         margin: 0;
         margin-right: 0px;
-        margin-left: 4px;
+        padding: 0;
         /*width: 370px;
         height: 404px;*/
         line-height: 2;
@@ -25,6 +25,7 @@
     &__img {
         position: relative;
         object-fit: cover;
+        display: inline-block;
     }
 }
 
@@ -38,6 +39,7 @@
     background-color: #FFFFFF;
     padding: 20px 24px;
     margin: 0;
+    text-align: left;
         
     &--accent {
         text-align: left;

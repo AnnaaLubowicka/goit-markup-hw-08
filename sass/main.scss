@@ -2,6 +2,7 @@
 
 @import "./base/common";
 @import "./base/container";
+@import "./base/settings";
 
 @import "./components/backdrop";
 @import "./components/modal";
@@ -17,6 +18,10 @@
 @import "./components/social-list-link";
 @import "./components/clients";
 @import "./components/newsletter";
+@import "./components/mobile-menu";
+
+@import "./pages/mobile-elements";
+
 
 @import "./layout/header";
 @import "./layout/tittle-section";

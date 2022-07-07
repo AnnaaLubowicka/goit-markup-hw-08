@@ -1,48 +1,154 @@
-
-.page-header {
-    border-bottom: 1px solid #ECECEC;
+// --------------------320---------------------
+@media screen and (min-width: 320px) {
+   .contact {
+      display: none;
+   }
 }
 
-.contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+// --------------------480---------------------
+@media screen and (min-width: 480px) {
+   .contact {
+      display: none;
+   }
+}
 
-    &:hover,
-    &:focus {
-        fill: currentColor;
-    }
+// --------------------768---------------------
+@media screen and (min-width: 768px) {
+   .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 101px;
+      padding-top: 21px;
+      padding-bottom: 21px;
+      
+   }
 
-    &__item {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+   .contact__link {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.143;
+      letter-spacing: 0.02em;
+      color: #757575;
+      text-decoration: none;
+      transition: color 250ms, fill 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      fill: currentColor;
+
+      &:hover,
+      &:focus {
+         fill: #2196F3;
+         color: #2196F3;
+      }
+   }
+
+   .contact__link--mail {
+      margin-bottom: 10px;
+   }
+
+   
+   .contact__icon {
+      margin-right: 8px;
+      /*transition: fill 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+      fill: currentColor;
+   }
+}
+
+// --------------------1200---------------------
+@media screen and (min-width: 1200px) {
+   .contact {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 345px;
+   }
+
+   
+   .contact__link {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.02em;
+      color: #757575;
+      text-decoration: none;
+      transition: color 250ms, fill 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+         fill: #2196F3;
+         color: #2196F3;
+      }
+   }
+
+   .contact__link--mail {
+      margin-right: 30px;
+      margin-bottom: 0;
+   }
+
+   
+   .contact__icon {
+      margin-right: 10px;
+      /*transition: color 500ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+   }
+}
+        
+
+// .page-header {
+//     border-bottom: 1px solid #ECECEC;
+//     position: relative;
+// }
+
+// .contact {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 0;
+//     padding: 0;
+
+//     &:hover,
+//     &:focus {
+//         fill: currentColor;
+//     }
+
+//     &__item {
+//     list-style: none;
+//     display: flex;
+//     justify-content: space-between;
             
-        &:not(:last-child) {
-            margin-right: 30px;
-        }   
-    }
+//         &:not(:last-child) {
+//             margin-right: 30px;
+//         }   
+//     }
 
-    &__link {
-        text-decoration: none;
-        font-size: 14px;
-        color: var(--link-color);
-        padding: 33px 0 31px;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        fill: currentColor;
+//     &__link {
+//         text-decoration: none;
+//         font-size: 14px;
+//         color: var(--link-color);
+//         padding: 33px 0 31px;
+//         transition-property: color;
+//         transition-duration: 250ms;
+//         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//         fill: currentColor;
 
-        &:hover,
-        &:focus {
-            color: var(--logo-color);
-        }
-    }
+//         &:hover,
+//         &:focus {
+//             color: var(--logo-color);
+//         }
+//     }
 
-    &__icon {
-        margin-right: 10px;
-        fill: currentColor;
-}
-}
+//     &__icon {
+//         margin-right: 10px;
+//         fill: currentColor;
+//     }
+// }
+
+

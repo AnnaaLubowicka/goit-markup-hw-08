@@ -1,38 +1,38 @@
-/*icon*/
-.advantages {
-    &__img {
-        display: flex;
-        justify-content: center;
-        padding: 25px 0;
-        background-color: var(--bg-icon-team);
-        border-radius: 4%;
-        height: 120px;
-        margin-bottom: 30px;
-    }
+// /*icon*/
+// .advantages {
+//     &__img {
+//         display: flex;
+//         justify-content: center;
+//         padding: 25px 0;
+//         background-color: var(--bg-icon-team);
+//         border-radius: 4%;
+//         height: 120px;
+//         margin-bottom: 30px;
+//     }
 
-    &__icon {
-        width: 70px;
-        height: 70px;
-        align-items: center;
-    }
+//     &__icon {
+//         width: 70px;
+//         height: 70px;
+//         align-items: center;
+//     }
     
-}   
+// }   
 
-/*text*/ 
-.advantages{
-    &__tittle {
-        font-size: 14px;
-        line-height: 1.17;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-    }
+// /*text*/ 
+// .advantages{
+//     &__tittle {
+//         font-size: 14px;
+//         line-height: 1.17;
+//         margin-bottom: 10px;
+//         text-transform: uppercase;
+//     }
 
-    &__text {
-        font-size: 14px;
-        line-height: 24px;
-        color: var(--link-color);
-        text-align: left;
-        vertical-align: top;
-    }
-}
+//     &__text {
+//         font-size: 14px;
+//         line-height: 24px;
+//         color: var(--link-color);
+//         text-align: left;
+//         vertical-align: top;
+//     }
+// }
 

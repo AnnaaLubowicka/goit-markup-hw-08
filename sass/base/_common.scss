@@ -4,6 +4,7 @@ body {
 
 }
 
+
 :root {
     --main-color: #212121;
     --logo-color: #2196F3;
@@ -21,6 +22,8 @@ h4,
 h5,
 h6 {
     margin: 0;
+    padding: 0;
+   
 }
 
 .link {
@@ -50,4 +53,16 @@ button {
     cursor: pointer;
     justify-content: center;
     display: flex;
+    color:#F5F4FA;
+}
+img {
+    display: block;
+    /*width: 100%;*/
+    height: auto;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   
 }
