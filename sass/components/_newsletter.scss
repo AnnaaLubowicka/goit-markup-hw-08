@@ -12,33 +12,30 @@
     color: var(--light-logo-color);
 }
 .newsletter-submit {
- 
     min-width: 100%;
     margin-left: 15px;
 
-}
-.newsletter-submit__input {
-    width: 450px;
-    height: 50px;
-    display: flex;
-    align-items: flex-start;
-    background-color: var(--bg-color);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    margin-top: 0px;
-    margin-right: 12px;
-    padding-left: 16px;
-    transition: none;
-    color: var(--light-logo-color);
-    outline-color: var(--link-color);
-
-   
-
-    &:focus {
+    &__input {
+        width: 450px;
+        height: 50px;
+        display: flex;
+        align-items: flex-start;
+        background-color: var(--bg-color);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        margin-top: 0px;
+        margin-right: 12px;
+        padding-left: 16px;
+        transition: none;
+        color: var(--light-logo-color);
         outline-color: var(--link-color);
-        transition-property: border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        /*color: #FFFFFF;*/
+
+        &:focus {
+            outline-color: var(--link-color);
+            transition-property: border;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            /*color: #FFFFFF;*/
+        }
     }
 }
 .newsletter-button {
@@ -70,6 +67,7 @@
         margin: 20px 140px 60px;
     }
 }
+//-----------1200------------------
 @media screen and (min-width: 1200px) {
 .newsletter-submit {
     display: inline-flex;
@@ -77,17 +75,14 @@
     align-content: center;
     margin: 0;
     
-
     &__input {
         margin-right: 15px;
         width: 358px;
         height: 50px;
+        }
     }
-
-}
 .newsletter-button--margin {
     margin: 0;
-    display: flex;
-    
-}
+    display: flex;    
+    }
 }

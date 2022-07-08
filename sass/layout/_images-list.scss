@@ -25,20 +25,22 @@
     flex-direction: column;
     }
 
-.images__list {
-    text-decoration: none;
-    list-style: none;
-    padding: 0 30px;
-    margin: 0 30px;
-    justify-content: space-between;
-    display: flex;
-    }
-.images__item {
+.images {
+    &__list {
+        text-decoration: none;
+        list-style: none;
+        padding: 0 30px;
+        margin: 0 30px;
+        justify-content: space-between;
+        display: flex;
+        }
+    &__item {
         position: relative;
         display: flex;
-        
+            
         &:not(:last-child) {
             margin-right: 30px;;
+            }
         }
-     }
- }
+    }
+}

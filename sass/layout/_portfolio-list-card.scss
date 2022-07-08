@@ -1,53 +1,37 @@
-// Mobile 480-768//
+//---------------480-768----------------//
 .portfolio {
     list-style-type: none;
+    
     &__item {
         margin-bottom: 30px;
-    }
-   
+    } 
 }
 
-//--- 768-1200-----//
+//-------------- 768-1200--------------//
 @media screen and (min-width: 768px) {
-     .portfolio-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 0 auto;
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    }
+}
 
-     }
- }
-
-// Desktop 1200+//
+//----------------1200-----------------//
 @media screen and (min-width: 1200px) {
-    .portfolio {
+.portfolio {
 
-        &__item:nth-child(-n + 5) {
+    &__item:nth-child(-n + 5) {
         margin-bottom: 30px;
         }
     }
-    .portfolio-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding-bottom: 94px;
+.portfolio-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 94px;
     }
 }
-
-
-//------1200------------
-// .portfolio-list {
-//     list-style: none;
-//     padding: 0;
-//     margin: 0;
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//     padding-bottom: 94px;
-// }
-// .portfolio__item:nth-child(-n + 5) {
-//     margin-bottom: 30px;
-// }

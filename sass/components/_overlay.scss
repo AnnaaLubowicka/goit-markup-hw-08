@@ -3,9 +3,9 @@
     margin: 0;
     position: absolute;
     width: 100%;
-    height: 294px;
+    height: 100%;
     left: 0px;
-    bottom: 143px;
+    bottom: 144px;
     overflow: hidden;
 
     background: rgba(33, 150, 243, 0.9);
@@ -23,11 +23,11 @@
 }
 
 .overlay-text {
-    position: absolute;
-    width: 301px;
-    height: 196px;
-    left: 24px;
-    top: 49px;
+    // position: absolute;
+    width: 402px;
+    height: 140px;
+    // left: 24px;
+    padding: 180px 24px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -37,4 +37,31 @@
     /* or 156% */
     letter-spacing: 0.03em;
     color: #FFFFFF;
+}
+//----------------768-----------------//
+@media screen and (min-width: 768px) {
+    .overlay {
+        height: 305px;
+        
+    }
+        .overlay-text {
+        padding-top: 49px;
+        padding-left: 15px;
+        width: 306px;
+        height: 196px;
+        }
+}
+
+//----------------1200-----------------//
+@media screen and (min-width: 1200px) {
+.overlay {
+    height: 305px;
+ 
+}
+  .overlay-text {
+      padding-top: 49px;
+      padding-left: 15px;
+      width: 301px;
+      height: 196px;
+  }
 }
