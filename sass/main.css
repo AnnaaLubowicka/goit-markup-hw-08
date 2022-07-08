@@ -1467,6 +1467,7 @@ ul {
     display: flex;
     flex-direction: row;
   }
+
   .advantages__item {
     margin-left: 0;
   }
@@ -1474,6 +1475,7 @@ ul {
     margin-right: 30px;
     margin-bottom: 0;
   }
+
   .advantages__tittle {
     margin-bottom: 10px;
     font-weight: bold;
@@ -1484,13 +1486,15 @@ ul {
     text-align: left;
     max-width: 270px;
   }
-  .advantages_text {
+
+  .advantages__text {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: #757575;
     max-width: 270px;
   }
+
   .advantages__img {
     display: flex;
     max-width: 270px;
