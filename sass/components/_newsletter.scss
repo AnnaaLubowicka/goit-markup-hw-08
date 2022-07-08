@@ -1,4 +1,10 @@
 //------------480---------
+.newsleter-flex {
+    text-align: center;
+    margin-top: 14px;
+    
+}
+
 .newsletter-flex__tittle {
     font-style: normal;
     font-size: 14px;
@@ -12,18 +18,15 @@
     color: var(--light-logo-color);
 }
 .newsletter-submit {
-    min-width: 100%;
-    margin-left: 15px;
+    text-align: center;
+    margin: 0 auto;
 
     &__input {
-        width: 450px;
+        width: 100%;
         height: 50px;
-        display: flex;
-        align-items: flex-start;
         background-color: var(--bg-color);
         border: 1px solid rgba(255, 255, 255, 0.3);
         margin-top: 0px;
-        margin-right: 12px;
         padding-left: 16px;
         transition: none;
         color: var(--light-logo-color);
@@ -65,12 +68,21 @@
         fill: #ffff;
     }
     &--margin {
-        margin: 20px 140px 60px;
+        margin: 20px auto 60px;
+       
     }
 .newsletter-icon {
     fill: #ffff;
 }
 }
+
+//---------768--------------------
+@media screen and (min-width: 768px) {
+.newsletter-submit__input {
+        width: 450px;
+    }
+}
+
 //-----------1200------------------
 @media screen and (min-width: 1200px) {
 .newsletter-submit {
@@ -81,12 +93,18 @@
     
     &__input {
         margin-right: 15px;
-        width: 358px;
+        max-width: 358px;
         height: 50px;
         }
     }
 .newsletter-button--margin {
     margin: 0;
     display: flex;    
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .newsletter-submit__input {
+        width: 450px;
     }
 }

@@ -102,7 +102,7 @@
 @media screen and (min-width: 1200px) {
 .page-footer .container {
     display: flex;
-    margin: 0;   
+    margin: 0 auto;   
     }
 
 .footer-flex {
@@ -115,11 +115,16 @@
 .footer-aside {
     align-items: flex-start;
     padding-right: 70px;
+    
     }
 
 .footer-address {
     align-items: flex-start;
     padding-top: 20px;
+    
+    &__item {
+        text-align: left;
+    }
     }
         
 .footer-social-links {
@@ -138,4 +143,14 @@
     flex-direction: row;
     }
             
+}
+
+
+@media screen and (min-width: 768px){
+.page-footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 }

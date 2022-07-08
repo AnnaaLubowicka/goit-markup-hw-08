@@ -46,11 +46,13 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-left: -30px;
     }
 
     &__link {
         @include clients__link;
-        width: 210px;
+        max-width: 210px;
+        margin-left: 30px;
     }
 
     &__item {
@@ -76,14 +78,16 @@
 // --------------------1200---------------------
 @media screen and (min-width: 1200px) {
 .clients {
+    
     &__link {
         width: 170px;
         padding: 0;
+        margin-left: 30px;
         }
 
     &__item {
         flex-basis: calc(100% / 6);
-        margin-right: 30px;    
+            
         }
     }
 }

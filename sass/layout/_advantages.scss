@@ -37,6 +37,7 @@
   &__text {
     @include advantages-text;
     max-width: 450px;
+    padding-left: 15px;
   }
 
   &__img {
@@ -92,6 +93,7 @@
   &__text {
     @include advantages-text;
     max-width: 354px;
+    padding-left: 0px;
     }
 
   &__img {

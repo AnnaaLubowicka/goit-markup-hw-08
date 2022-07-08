@@ -1,7 +1,7 @@
 // --------------------480---------------------//
 .title-section {
     &__title {
-        width: 365px;
+        max-width: 365px;
         /*height: 84px;*/
 
         font-family: 'Roboto';
@@ -24,7 +24,7 @@
         @media screen and (min-width: 1200px) {
             font-size: 44px;
             line-height: 1.36;
-            width: 696px; 
+            max-width: 696px; 
             }
     }
 //---------button no changes----------------------//        
