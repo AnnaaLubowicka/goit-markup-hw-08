@@ -954,7 +954,6 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: left;
-  padding-top: 60px;
   padding-bottom: 20px;
   color: var(--light-logo-color);
 }
@@ -1556,21 +1555,10 @@ ul {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 320px) {
-  .images .container {
-    display: none;
-  }
+.images .container {
+  display: none;
 }
-@media screen and (min-width: 480px) {
-  .images .container {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .images .container {
-    display: none;
-  }
-}
+
 @media screen and (min-width: 1200px) {
   .images .container {
     display: flex;
@@ -1582,7 +1570,6 @@ ul {
   .images__list {
     text-decoration: none;
     list-style: none;
-    padding: 0 30px;
     margin: 0 30px;
     justify-content: space-between;
     display: flex;
@@ -1593,6 +1580,9 @@ ul {
   }
   .images__item:not(:last-child) {
     margin-right: 30px;
+  }
+  .images__picture {
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 320px) {
@@ -1757,6 +1747,74 @@ ul {
 }
 .page-footer {
   background-color: var(--bg-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.page-footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.footer-aside {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-address__item {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  list-style-type: none;
+  text-align: center;
+  color: white;
+}
+.footer-address__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.footer-address__link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.logo--footer {
+  padding-bottom: 16px;
+  align-items: center;
+}
+
+.footer-social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.footer-social-links__tittle {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  color: white;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.newsletter-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
 }
 
 @media screen and (min-width: 320px) {
