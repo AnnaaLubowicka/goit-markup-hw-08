@@ -21,4 +21,7 @@
         text-align: center;
         color: var(--link-color);
     }
+    &__image {
+        max-width: 100%;
+    }
 }

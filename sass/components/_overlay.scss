@@ -24,11 +24,10 @@
 
 .overlay-text {
     // position: absolute;
-    width: 402px;
-    height: 140px;
+    width: 100%;
+    height: 100%;
     // left: 24px;
-    padding: 180px 24px;
-
+    padding-top: 100px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -38,14 +37,41 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
+//----------------320-----------------//
+@media screen and (min-width: 320px) and (max-width:479px) {
+    .overlay {
+            width: 100%;
+            height: 374px;
+        }
+    
+        .overlay-text {
+            width: 320px;
+            height: 266px;
+            padding: 100px 24px;
+    
+        }
+    }
+//----------------480-767-----------------//
+@media screen and (min-width: 480px) and (max-width:767px){
+    .overlay {
+        width: 450px;
+        height: 374px;
+    }
+    .overlay-text {
+        width: 402px;
+        height: 140px;
+        padding: 77px 24px;
+    
+    }
+}
 //----------------768-----------------//
 @media screen and (min-width: 768px) {
     .overlay {
-        height: 305px;
+        height: 354px;
         
     }
         .overlay-text {
-        padding-top: 49px;
+        padding-top: 77px;
         padding-left: 15px;
         width: 306px;
         height: 196px;
@@ -61,7 +87,7 @@
   .overlay-text {
       padding-top: 49px;
       padding-left: 15px;
-      width: 301px;
-      height: 196px;
+      width: 370px;
+      height: 294px;
   }
 }
