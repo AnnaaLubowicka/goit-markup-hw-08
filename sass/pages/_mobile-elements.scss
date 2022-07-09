@@ -14,6 +14,7 @@
     position: absolute;
     top: 21px;
     right: 25px;
+    font-size: 30px;
     color: #212121;
     background-color: transparent;
     border: none;
@@ -45,10 +46,10 @@
     &::before {
         content: "";
         display: flex;
-        width: $width-mobile-menu__socjal-link--line;
+        width: 22px;
         height: 1px;
         background-color: rgba(33, 33, 33, 0.2);
-        rotate: 90deg;
+        transform: rotate(90deg);
     }
 }
 

@@ -964,7 +964,7 @@ ul {
   margin: 0 auto;
 }
 .newsletter-submit__input {
-  width: auto;
+  width: 100%;
   height: 50px;
   background-color: var(--bg-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1107,6 +1107,7 @@ ul {
     position: absolute;
     top: 21px;
     right: 25px;
+    font-size: 30px;
     color: #212121;
     background-color: transparent;
     border: none;
@@ -1177,10 +1178,10 @@ ul {
   .mobile-menu__socjal-link--line::before {
     content: "";
     display: flex;
-    width: 18px;
+    width: 22px;
     height: 1px;
     background-color: rgba(33, 33, 33, 0.2);
-    rotate: 90deg;
+    transform: rotate(90deg);
   }
 
   .mobile-menu__socjal-link {
@@ -1206,6 +1207,7 @@ ul {
     position: absolute;
     top: 21px;
     right: 25px;
+    font-size: 30px;
     color: #212121;
     background-color: transparent;
     border: none;
@@ -1279,7 +1281,7 @@ ul {
     width: 22px;
     height: 1px;
     background-color: rgba(33, 33, 33, 0.2);
-    rotate: 90deg;
+    transform: rotate(90deg);
   }
 
   .mobile-menu__socjal-link {
