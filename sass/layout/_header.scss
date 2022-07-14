@@ -1,16 +1,20 @@
-// --------------------320---------------------
-@media screen and (min-width: 320px) {
-   .contact {
-      display: none;
-   }
-}
+  .contact {
+     display: none;
+  }
 
-// --------------------480---------------------
-@media screen and (min-width: 480px) {
-   .contact {
-      display: none;
-   }
-}
+// --------------------320---------------------
+// @media screen and (max-width: 320px) {
+//    .contact {
+//       display: none;
+//    }
+// }
+
+// // --------------------480---------------------
+// @media screen and (max-width: 480px) {
+//    .contact {
+//       display: none;
+//    }
+// }
 
 // --------------------768---------------------
 @media screen and (min-width: 768px) {

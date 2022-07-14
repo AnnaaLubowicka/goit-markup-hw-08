@@ -14,8 +14,12 @@
   letter-spacing: 0.03em;
   color: #757575;
 }
-// -----------------------320--------------------------
-@media screen and (min-width: 320px) {
+.advantages .container {
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .advantages {
   &__list {
     display: flex;
@@ -56,7 +60,7 @@
     height: 70px;
     }
   }
-}
+
 // -----------------------768--------------------------
 @media screen and (min-width: 768px) {
 .advantages .container {

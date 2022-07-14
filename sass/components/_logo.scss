@@ -28,3 +28,11 @@
         color: var(--light-logo-color);
     }
 }
+ @media screen and (max-width: 320px) {
+    .logo {
+        &--page-header {
+                padding: 25px 0;
+                //     margin-right: 93px;
+    }
+}
+ }
