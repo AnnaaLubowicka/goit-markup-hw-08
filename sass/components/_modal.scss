@@ -1,57 +1,12 @@
-// //-------320-----
- @media screen and (max-width: 1199px) {
-     .modal {
-        width:100%;
-        height: 100%;
-    }
-}
-
-
-
-// //-------------480-768-------
+// //-------------1200-------
 @media screen and (min-width: 1200px) {
     .modal {
-        width: 528px;
-        height: 581px;
-        max-width: 100%;
+        min-width: 528px;
+        // min-height: 581px;
     }
-
-          &__tittle {
-              width: 448px;
-             
-          }
 }
-//         //   &__close-btn {
-//         //      left: 412px;
-//         //  }
-//      }
-//          .modal-inputs {
-//              width: 370px;
-            
-//      }
-//  }
-// //-----------1200---------------
-// @media screen and (min-width: 768px) {
-//     .modal {
-//         min-width: 528px;
-//         height: 581px;
 
-//         &__tittle {
-//             min-width: 448px;
-//             height: 23px;
-//             margin-bottom: 12px;
-//         }
-
-//         // &__close-btn {
-//         //     left: 490px;
-//         // }
-//     .modal-inputs {
-//         min-width: 448px;
-//         height: 342px;
-//     }
-// }
-// }
-
+//------podstawowe ustawienia do 1200----
 .modal {
     /* Okno modalne */
     position: absolute;
@@ -70,10 +25,7 @@
 
 
     &__tittle {
-        /* Zostaw swoje dane w formularzu poniżej */
-        position: absolute;
-        max-width: 370px;
-        // height: 23px;
+        width: 100%;
         left: 40px;
         top: 40px;
     
@@ -140,12 +92,12 @@
 
 .modal-inputs {
     /* Inputs */
-    position: absolute;
+    // position: absolute;
     // width: 448px;
     // height: 342px;
-    left: 40px;
-    top: 75px;
-    padding-right: 40px;
+    // left: 40px;
+    // top: 75px;
+    // padding-right: 40px;
     
     &__label {
         display: flex;
@@ -192,7 +144,7 @@
     text-align: left;
     height: 120px;
     padding-left: 16px;
-    min-width:100%;
+    width: auto;
 }
 
 .checkbox {
