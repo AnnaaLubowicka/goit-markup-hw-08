@@ -1,18 +1,22 @@
 // --------------------320---------------------
 // @media screen and (min-width: 320px) {
-    .page-header .container {
-        position: relative;
-        align-items: center;
-        height: 60px;
-        max-width: 320px;
-       
-    }
-
     .page-header {
-        // padding: 0 15px;
         background: #ffffff;
         border-bottom: 1px solid #ececec;
     }
+
+    .page-header .container {
+        position: relative;
+        align-items: center;
+        min-height: 60px;
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+        padding: 0 15px;
+        width: 100%;
+    }
+
+
 
     .advantages .container {
         justify-content: center;
@@ -25,16 +29,12 @@
 @media screen and (min-width: 480px) {
     .page-header .container {
         align-items: center;
-        height: 60px;
-        max-width: 480px;
+        min-height: 60px;
         padding: 0 15px;
+        display: flex;
+        min-height: 80px;
     }
 
-    .page-header {
-        // padding: 0 15px;
-        background: #ffffff;
-        border-bottom: 1px solid #ececec;
-    }
 
     .advantages .container {
         justify-content: center;
@@ -42,34 +42,17 @@
         padding-bottom: 60px;
     }
 
-    .page-header .container {
-        align-items: center;
-        height: 80px;
-        max-width: 768px;
-    }
-
-    .page-header {
-        background: #ffffff;
-        border-bottom: 1px solid #ececec;
-    }
-
-    .advantages .container {
-        justify-content: center;
-        padding-top: 60px;
-    }
 }
 
 // --------------------1200---------------------
 @media screen and (min-width: 1200px) {
     .page-header .container {
         align-items: center;
-        height: 80px;
-        max-width: 1200px;
-    }
-
-    .page-header {
-        background: #ffffff;
-        border-bottom: 1px solid #ececec;
+        min-height: 80px;
+        display: flex;
+        margin: 0 auto;
+        padding: 0 15px;
+       
     }
 
     .advantages .container {

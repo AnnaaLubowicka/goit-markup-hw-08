@@ -28,18 +28,24 @@
         color: var(--light-logo-color);
     }
 }
- @media screen and (max-width: 320px) {
+
+@media screen and (min-width: 1200px) {
     .logo {
-        &--page-header {
-                padding: 25px 0;
-                
-    }
+        font-size: 26px;
 }
- }
-  @media screen and (max-width: 768px) {
-      .logo {
-          &--page-header {
-            padding-left: 15px;
-          }
-        }
-    }
+}
+//  @media screen and (max-width: 320px) {
+//     .logo {
+//         &--page-header {
+//                 padding: 25px 0;
+                
+//     }
+// }
+//  }
+//   @media screen and (max-width: 768px) {
+//       .logo {
+//           &--page-header {
+//             padding-left: 15px;
+//           }
+//         }
+//     }
