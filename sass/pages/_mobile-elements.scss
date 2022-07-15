@@ -1,4 +1,6 @@
 @mixin mobile-menu {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     left: 0;
     top: 0;
@@ -13,7 +15,7 @@
 @mixin mobile-menu__close-btn {
     position: absolute;
     top: 21px;
-    right: 25px;
+    right: 21px;
     font-size: 36px;
     color: #212121;
     background-color: transparent;
@@ -57,7 +59,7 @@
 // @media screen and (min-width: 320px) {
     .mobile-menu {
         @include mobile-menu;
-        padding: 40px 20px;
+        padding: 48px 40px;
     }
 
     .mobile-menu__close-btn {
@@ -81,13 +83,14 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        margin-top: auto;
         
     }
 
     .mobile-menu__contact-item {
         &:not(:last-child) {
             padding-bottom: 32px;
-            padding-top: 302px;
+
         }
     }
 

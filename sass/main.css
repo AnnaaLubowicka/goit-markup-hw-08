@@ -1065,6 +1065,8 @@ ul {
   }
 }
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   left: 0;
   top: 0;
@@ -1072,13 +1074,13 @@ ul {
   height: 100%;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
-  padding: 40px 20px;
+  padding: 48px 40px;
 }
 
 .mobile-menu__close-btn {
   position: absolute;
   top: 21px;
-  right: 25px;
+  right: 21px;
   font-size: 36px;
   color: #212121;
   background-color: transparent;
@@ -1112,11 +1114,11 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-top: auto;
 }
 
 .mobile-menu__contact-item:not(:last-child) {
   padding-bottom: 32px;
-  padding-top: 302px;
 }
 
 .mobile-menu__contact-link {
