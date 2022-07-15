@@ -32,7 +32,14 @@
     .logo {
         &--page-header {
                 padding: 25px 0;
-                //     margin-right: 93px;
+                
     }
 }
  }
+  @media screen and (max-width: 768px) {
+      .logo {
+          &--page-header {
+            padding-left: 15px;
+          }
+        }
+    }

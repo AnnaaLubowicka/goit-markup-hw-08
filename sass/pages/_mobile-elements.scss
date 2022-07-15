@@ -54,7 +54,7 @@
 }
 
 // --------------------320---------------------
-@media screen and (min-width: 320px) {
+// @media screen and (min-width: 320px) {
     .mobile-menu {
         @include mobile-menu;
         padding: 40px 20px;
@@ -78,13 +78,16 @@
     }
 
     .mobile-menu__contact-list {
-        margin-top: 250px;
-        margin-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
     }
 
     .mobile-menu__contact-item {
         &:not(:last-child) {
-            margin-bottom: 32px;
+            padding-bottom: 32px;
+            padding-top: 302px;
         }
     }
 
@@ -97,6 +100,7 @@
         font-size: 30px;
         line-height: 40px;
         letter-spacing: 2%;
+        
     }
 
     .mobile-menu__contact-link--mail {
@@ -114,6 +118,9 @@
 
     .mobile-menu__socjal-list {
         display: flex;
+        flex-direction: row;
+        margin-top: 64px;
+        margin-bottom: 48px;
     }
 
     .mobile-menu__socjal-link--line {
@@ -127,81 +134,3 @@
         line-height: 22px;
         color: #2196F3;
     }
-}
-
-// --------------------480---------------------
-@media screen and (min-width: 480px) {
-    .mobile-menu {
-        @include mobile-menu;
-        padding: 48px 40px;
-    }
-
-    .mobile-menu__close-btn {
-        @include mobile-menu__close-btn;
-        
-    }
-
-    .mobile-menu__navigation-item {
-        font-size: 40px;
-        line-height: 47px;
-
-        &:not(:last-child) {
-            margin-bottom: 32px;
-        }
-    }
-
-    .mobile-menu__navigation-link {
-        @include mobile-menu__navigation-link;
-    }
-
-    .mobile-menu__contact-list {
-        margin-top: 302px;
-        margin-bottom: 64px;
-    }
-
-    .mobile-menu__contact-item {
-        &:not(:last-child) {
-            margin-bottom: 32px;
-        }
-    }
-
-    .mobile-menu__contact-link {
-        text-decoration: none;
-    }
-
-    .mobile-menu__contact-link--phone {
-        color: #2196F3;
-        font-size: 34px;
-        line-height: 40px;
-        letter-spacing: 2%;
-    }
-
-    .mobile-menu__contact-link--mail {
-        color: #757575;
-        font-size: 24px;
-        line-height: 28px;
-        transition: color 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover,
-        &:focus {
-            color: #2196F3;
-        }
-    }
-
-    .mobile-menu__socjal-list {
-        display: flex;
-    }
-
-    .mobile-menu__socjal-link--line {
-        @include mobile-menu__socjal-link--line(22px);
-    }
-
-
-    .mobile-menu__socjal-link {
-        text-decoration: none;
-        font-size: 18px;
-        line-height: 22px;
-        color: #2196F3;
-    }
-}
